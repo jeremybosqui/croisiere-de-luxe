@@ -1,0 +1,95 @@
+/* début de la mise en page en faisant le slider avec les images*/
+
+html, body {
+    width: 100%;
+    margin: 0;
+    font-family: "Helvetica", sans-serif;
+  }
+/* intégration du h1 dans le header*/
+
+  /* définition de la taille des images qui seront présente dans le header*/
+
+  img {
+    max-width: 100%;
+  }
+  /* définition d'une taille pour le header pour éviter qu'il ne s'adapter au images présente dans le header et ainsi éviter les problèmes de taille*/
+
+  header { 
+    height: 70%;
+}
+header h1 { 
+    font-size: small;
+    z-index: 1000;
+    position: absolute;
+    top: 10px;
+}
+/* mise en place des position et du "menu" qui sont en fait les boutons permettant de switch les images présentent dans le header*/
+
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: rgb(83, 79, 79);
+    border-radius: 50px;
+    margin: 0 .2em 1em;
+  }
+  .menu label:hover { 
+      background:rgb(233, 226, 226);
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-size: cover;
+    transition: left 0s .75s;
+  }
+  
+  [id^="slide"]:checked + .slide {
+    left: 0;
+    z-index: 100;
+    transition: left .78s ease-out;
+  }
+  
+  .slider-container{
+    height: 400px;
+    width: 100%;
+    margin: auto;
+    position: relative;
+    overflow: hidden; 
+    text-align: center;
+  }
+
+.slide-1 {
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("../img/cruise-659924_1920.jpg");
+    background-position: bottom;
+  }
+  .slide-2 {
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("../img/maldives-1993704_1920.jpg");
+    background-position: bottom;
+  }
+  .slide-3 {
+    background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("../img/cruise-ship-363804_1920.jpg");
+    background-position: center;
+  }
+  .slide-4 { 
+      background-image: linear-gradient(rgba(0,0,0,.2), rgba(0,0,0,.2)), url("../img/boattt.jpg");
+      background-position: bottom;
+  }
+
+nav {
+    background-color: black;
+}
