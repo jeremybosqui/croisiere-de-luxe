@@ -1,0 +1,56 @@
+ #introduction{ /*introduction*/
+  font-size: 20px ;
+  border: solid 1px black;
+  padding: 25px;
+    margin-left: 0%;
+    font-size: 30px;
+    text-align: center;
+}
+#photo1{
+    width: 75%;
+    height: 150px;
+}
+#photo2{
+    width: 75%;
+    height:150px;
+}
+#photo3{
+    width: 75%;
+    height: 150px;
+}
+#bloc1{
+    grid-area: le coin thermale ;
+    background-image: url(https://t3.ftcdn.net/jpg/02/45/33/26/240_F_245332622_g1S6Cv9tOporPHAf5susYxMgyfxpXHe4.jpg);
+    background-repeat: no-repeat;
+}
+#bloc2{
+    grid-area: les massages aux huiles essentielles;
+    background-image: url(https://cdn.pixabay.com/photo/2015/01/05/22/29/wellness-589773__340.jpg);
+    background-repeat: no-repeat;
+}
+#bloc3{
+    grid-area: le coin détente;
+    padding-top: 130px;
+    background-image: url(https://t3.ftcdn.net/jpg/00/02/70/38/240_F_2703876_0WXhMVJydIaFPisWK8eoxcmwxcH4bl.jpg);
+    background-repeat: no-repeat;
+    background-size: 75%;
+}
+.grid-container{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-areas: 
+    "le coin thermale les massages aux huiles essentielles le coin détente"
+    ;
+    width: 80%;
+    border: solid blueviolet;
+    margin-left: 80px;
+
+}
+#first{
+    padding: 10px;
+}
+h2{
+    padding-left: 150px;
+
+}
