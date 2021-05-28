@@ -5,7 +5,11 @@ html, body {
     margin: 0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgba(228, 225, 225, 0.205);
-    color: black;
+  }
+  legend { 
+    font-size: 21px;
+    font-weight: bold;
+    color: #095aaa;
   }
   .logo { 
     background: no-repeat center/55% url('../img/LA_MANU_CROISIERE.png');
@@ -21,8 +25,9 @@ html, body {
       color: #095aaa;
   }
   h2{
-      padding-left: 150px;
+      text-align: center;
       color: #095aaa;
+      font-style: italic;
   
   }
 
@@ -104,11 +109,11 @@ header h1 {
     background-position: bottom;
   }
   .slide-2 {
-    background-image: linear-gradient(rgba(179, 175, 175, 0.363), rgba(0,0,0,.2)), url("../img/plage1.jpg");
-    background-position: bottom;
+    background-image: linear-gradient(rgba(179, 175, 175, 0.068), rgba(0,0,0,.2)), url("../img/plage1.jpg");
+    background-position: center;
   }
   .slide-3 {
-    background-image: linear-gradient(rgba(161, 159, 159, 0.479), rgba(0,0,0,.2)), url("../img/cruise-ship-363804_1920.jpg");
+    background-image: linear-gradient(rgba(161, 159, 159, 0.397), rgba(0,0,0,.2)), url("../img/cruise-ship-363804_1920.jpg");
     background-position: center;
   }
   .slide-4 { 
@@ -119,7 +124,6 @@ header h1 {
 /* préparation de la barre de navigation avant le dropdown menu*/
 
 nav {
-
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -127,6 +131,11 @@ nav {
     border-top: 1px solid white;
     border-bottom: white 2px solid;
   }
+  /*suppression du menu burger dans la navigation en grand écran*/
+nav img { 
+  display: none;
+}
+
  a { 
       font-size: 22px;
       margin-left: 5rem;
@@ -168,7 +177,7 @@ nav {
     text-align: left;
     font-size: 15px;
   }
-  
+  /* création du background dans le hover pour pouvoir avoir de la visiblité dans le dropdown menu*/
   .dropdown-content a:hover {background-color: #095aaabe}
   
   .dropdown:hover .dropdown-content {
@@ -220,104 +229,138 @@ nav {
 
   /* début de l'agencement de la box contenant les artciles sur la cure thermale*/
  
-  #bloc1{
+  #imagethermal{
       background-image: url(../img/detente.jpg);
       background-size: cover;
-      
+      height: 200px;
+      width: auto;
   }
-  #bloc2{
+  #imagehuile{
       background-image: url(../img/massage.jpg);
       background-size: cover;
-    
+      height: 200px;
+      width: auto;
   }
-  #bloc3{
+  #imagedetente{
       background-image: url(../img/serviette.jpg);
       background-size: cover;
+      height: 200px;
+      width: auto;
   }
   .articles{
+      text-align: center;
       display: grid;
-      grid-template-rows: 320px;
+      grid-template-rows: 350px;
       grid-template-columns: repeat(3, 1fr);
       width: 93%;
       border: 3px solid #003468;
       grid-gap: 10px;
-      margin:auto;
+      margin-right:auto;
+      margin-left: auto;
+  }
+  .h2paul { 
+    margin-top: 65px;
   }
  
   /* voici le bloc nommé articles2 contenant la partie sur la partie artistique avec l'opéra et le théâtre*/
 
   .articles2{
+    text-align: center;
     display: grid;
-    grid-template-rows: 320px;
+    grid-template-rows: 350px;
     grid-template-columns: repeat(3, 1fr);
     width: 93%;
     border: 3px solid #003468;
     grid-gap: 10px;
-    margin:auto;
+    margin-right:auto;
+    margin-left: auto;
 }
 /* ce bloc contient les images de l'articles2 */
-#bloc4 { 
+#imagetheatre { 
   background-image: url(../img/auditorium-86197_1920.jpg);
   background-size: cover;
+  height: 200px;
+  width: auto;
 }
-#bloc5 { 
+#imageopera { 
   background-image: url(../img/opera-594592_1920.jpg);
   background-size: cover;
+  height: 200px;
+  width: auto;
 }
-#bloc6 { 
+#imageorchestre { 
   background-image: url(../img/violins-1838390_1920.jpg);
   background-size: cover;
+  height: 200px;
+  width: auto;
 }
 /*voici la partie articles3 contenant les activités sportives*/
 
 .articles3{
+  text-align: center;
   display: grid;
-  grid-template-rows: 320px;
+  grid-template-rows: 350px;
   grid-template-columns: repeat(3, 1fr);
   width: 93%;
   border: 3px solid #003468;
   grid-gap: 10px;
-  margin:auto;
+  margin-right:auto;
+  margin-left: auto;
 }
 /* ce bloc contient les images de l'articles3*/
-#bloc7 {
+#imageaquagyme {
   background-image: url(../img/aquagym.jpg);
   background-size: cover;
+  height: 200px;
+  width: auto;
 }
-#bloc8 {
+#imagesallesport {
   background-image: url(../img/salle-de-sport.jpg);
   background-size: cover;
+  height: 200px;
+  width: auto;
 }
-#bloc9 {
+#imagezumba{
   background-image: url(../img/danse.jpg);
   background-size: cover;
+  height: 200px;
+  width: auto;
 }
 
 
 /*et enfin voici la partie 4 contenant les articles sur les parties de jeux dans le casino*/ 
 
 .mango4{
+  text-align: center;
   display: grid;
-  grid-template-rows: 320px;
+  grid-template-rows: 350px;
   grid-template-columns: repeat(3, 1fr);
   width: 93%;
   border: 3px solid #003468;
   grid-gap: 10px;
-  margin:auto;
+  margin-right:auto;
+  margin-left: auto;
 }
+
 /*voici la partie contenant les images de la derniere partie*/
 
-#bloc10 {
+#imagehasard {
   background-image: url(../img/roulette.jpg);
   background-size: cover;
+  height: 200px;
+      width: auto;
 }
-#bloc11 {
+#imagesous {
   background-image: url(../img/gambling-602976_1920.jpg);
   background-size: cover;
+  height: 200px;
+      width: auto;
 }
-#bloc12 {
+#imagecarte {
   background-image: url(../img/cartecasino.jpg);
   background-size: cover;
+  height: 200px;
+      width: auto;
 }
 
 /* mise en place de la partie contenant les services qui sont à bord du manuela*/
@@ -329,10 +372,10 @@ nav {
 }
 #services i { 
   font-size: 50px;
+  color: #003468;
 }
 .h2service { 
   padding-top: 70px;
-  margin-left: 250px;
 }
 .repas i {
   margin-left: 50px;
@@ -351,10 +394,11 @@ nav {
 
 .formul { 
   margin-top: 50px;
-  border: black 5px solid;
+  border: black 3px solid;
   width: 500px;
-  margin-left: 430px; 
-  background-color: #003468;
+  margin-left: auto;
+  margin-right: auto; 
+  background-color:#095aaabe;
   border-radius: 15px;
 }
 .formul h2 { 
@@ -413,12 +457,18 @@ nav {
     margin-left: 250px;
   }
 
+/*mise en place du contenu du footer avec les icones de réseaux sociaux les mentions légal etc*/
 #findevie { 
-  border: 5px solid black;
+  background-color:#003468;
+  border-top: black solid 2px;
   margin-top: 20px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, auto);
+}
+#findevie { 
+  font-size: 22px;
+  color: white;
 }
 #reseaux { 
   display: grid;
@@ -426,20 +476,240 @@ nav {
   grid-row: 2;
 }
 #reseaux i {
-  font-size: 40px;
-  margin-left: 60px;
+  font-size: 45px;
+  margin-left: 5px;
+  color: white;
 
 }
 
 #logoeddy{ 
-  background:no-repeat center/50% url(../img/LA_MANU_CROISIERE.png);
-  
+  background:no-repeat center/55% url(../img/LA_MANU_CROISIERE.png);
   width: 100px;
   height: 100px;
   position: absolute;
   right: 10px;
 
 }
+/*MISE EN PLACE DE LA BARRE DE RECHERCHE ET DU BOUTON AVEC LES 4 BLOCS*/
+#mbid1{
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;  /*branche principale*/
+  grid-template-rows: 1fr;
+  grid-column-gap: 40px;
+}
+.mbh1 { 
+  margin-top: 50px;
+  color:#095aaa ;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+#mbid1 p { 
+  text-align: center;
+  color: white;
+}
 
+.mb2{
+  grid-column: 1/3;           /*ou souhaitez vous aller ?*/
+  grid-row: 3/4;
+  border:solid #095aaa ;
+  background-color: #003468;
+  border-radius: 5px;
+}
 
+.mb3{
+  grid-column: 3/5;
+  grid-row: 3/4;             /*Quand ?*/
+  border:solid#095aaa ;
+  background-color: #003468;
+  border-radius: 5px;
+}
+
+.mb4{
+  grid-column: 5/7;            /*Qui part avec vous */
+  grid-row: 3/4;
+  border:solid #095aaa ;
+  background-color: #003468;
+  border-radius: 5px;
+}
+
+.mbh1{
+  grid-column: 1/3;    /*Gros titre*/
+}
+
+.action-button{
+  grid-column: 7/9;
+  grid-row: 3/4;
+  border-radius: 10px;
+  font-family: 'Pacifico', cursive;
+  font-size: 25px;
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #003468;
+  border-bottom: 5px solid #095aaa ;
+  transition: all 0.1s;
+  -webkit-transition: all 0.1s;
+
+}
+
+.action-button:active{
+  transform: translate(0px,5px);
+  -webkit-transform: translate(0px,5px);
+  border-bottom: 1px solid;
+}
+
+@media screen and (max-width: 1024px) { 
+  /*mettre le titre h1 en responsive*/
+  header h1 { 
+    font-size: 35px;
+    z-index: 1000;
+    position: absolute;
+    top: 200px;
+    left: 110px;
+    color: #095aaa;
+    text-shadow: 5px 5px 5px rgba(235, 225, 225, 0.637);
+}
+/* mise en place du responsive de la nav barre*/
+nav img {
+  display: block;
+  width: auto;
+  margin-left:auto;
+  margin-right: auto;
+  height: 100px;
+}
+a, .dropbtn {
+  display: inline-block;
+  display: none;
+  text-decoration: none;
+}
+
+a:hover, .dropdown:hover .dropbtn {
+  display: flex;
+  display: none;
+}
+
+.dropdown {
+  display: inline-block;
+  display: none;
+}
+/*mise en place de la slide bar numéro 2 en responsive*/
+.sliderd2 { 
+  width: auto;
+  height: 300px;
+  background: url(../img/sea-931164_1920.jpg);
+  background-size: cover;
+  margin: auto;
+  animation: slide 20s infinite;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+/*mise en place du reponsive formulaire*/
+.formul { 
+  margin-top: 50px;
+  border: black 3px solid;
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#095aaabe;
+  border-radius: 15px;
+}
+/*mise en place du reponsive pour le footer*/
+#findevie { 
+  background-color:#003468;
+  border-top: black solid 2px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+}
+#findevie { 
+  font-size: 15px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*mise en place du logo par rapport au footer*/
+#logoeddy{ 
+  background:no-repeat center/55% url(../img/LA_MANU_CROISIERE.png);
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin-left: 20px;
+  right: 10px;
+
+}
+/*definition de la taille des h2 en responsive*/
+h2 { 
+  font-size: 18px;
+}
+/*definition de la taille des legendes*/
+legend { 
+  font-size: 15px;
+  font-weight: bold;
+}
+p { 
+  font-size: 11px;
+}
+/*mise en place du responsive au niveaux des icones de services du navire*/
+#reseaux i {
+  font-size: 35px;
+  margin-left: 10px;
+  color: white;
+
+}
+#services { 
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  padding-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.securite i { 
+  margin-left: 20px;
+}
+.repas i {
+  margin-left: 35px;
+ }
+ #mbid1 { 
+  display: none;
+}
+#disparition { 
+  display: grid;
+  display: none;
+}
+
+}
+@media screen and (max-width: 600px) {
+
+  /*mise en place du reponsive sur telephone*/
+  nav img {
+    display: flex;
+    width: auto;
+    margin-left: 200px;
+    height: 100px;
+  }
+  .formul { 
+    margin-top: 50px;
+    border: black 2px solid;
+    width: 492px;
+    margin-left: auto;
+    margin-right: auto; 
+    background-color:#095aaabe;
+    border-radius: 15px;
+  }
+  legend { 
+    font-size: 10px;
+    font-weight: bold;
+  }
+  p { 
+    font-size: 10.4px;
+  }
+  #mbid1 { 
+    display: none;
+  }
+  #disparition { 
+    display: grid;
+    display: none;
+  }
+}
   
