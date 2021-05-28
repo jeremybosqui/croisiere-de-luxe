@@ -753,7 +753,7 @@ p {
 
   /*modification de la legende*/
   legend { 
-    font-size: 5px;
+    font-size: 10px;
     font-weight: bold;
   }
   p { 
@@ -793,7 +793,7 @@ p {
 }
 /*modification du h2 en reponsive mobile*/
 .h2service { 
-  font-size: 10px;
+  font-size: 12px;
 }
 /*disparition des icones qui dérange pour scotché son site*/
 
@@ -909,14 +909,6 @@ p {
   height: 140px;
   width: auto;
 }
-
-
-
-
-
-
-
-
 .mango4{
   text-align: center;
   display: grid;
@@ -949,6 +941,4 @@ p {
   width: auto;
 }
 
-
 }
-  
